@@ -449,3 +449,164 @@ footer {
 footer p {
   text-align: center;
 }
+/* ============================= */
+/* RESPONSIVIDADE - MOBILE FIXES */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  section {
+    margin: 0 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* GERAL */
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 10vh;
+  }
+
+  /* Esconde menu desktop e mostra hamburguer */
+  #desktop-nav {
+    display: none;
+  }
+  #hamburguer-nav {
+    display: flex;
+  }
+
+  /* SEÇÕES */
+  section {
+    height: auto;
+    margin: 2rem 1rem;
+    padding-top: 2rem;
+  }
+
+  /* PROFILE SECTION */
+  #profile {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-picture1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .section__text__p2 {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  /* ABOUT */
+  .section-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  /* EXPERIENCE */
+  .article-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experince-sub-title {
+    font-size: 1.3rem;
+  }
+
+  article {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* PROJECTS */
+  .color-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* CONTACT */
+  .contact-info-upper-container {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .contact-info-container {
+    flex-direction: column;
+    margin: 0.5rem 0;
+  }
+
+  /* BOTÕES */
+  .btn-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  /* FOOTER */
+  footer {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .section__pic-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .nav-links {
+    font-size: 1.2rem;
+  }
+}
