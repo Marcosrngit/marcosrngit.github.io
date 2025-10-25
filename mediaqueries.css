@@ -101,20 +101,123 @@
     text-align: justify;
   }
 }
-/* Ajuste responsivo da foto de perfil */
-@media (max-width: 768px) {
-  
-}
+/* MOBILE (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  /* Ajuste geral */
+  section {
+    margin: 0 2rem;
+    height: auto;
+  }
+
+  /* Navbar */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  /* Profile section */
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 2rem;
+  }
+
   .section__pic-container {
-    width: 400px; /* tamanho menor no celular */
-    height:400px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
   }
 
   .profile-pic {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center;
+    border: 3px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
+
+  .section__text {
+    text-align: center;
+  }
+
+  .section__text__p1 {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.3rem;
+  }
+
+  /* Botões */
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 80%;
+  }
+
+  /* Social icons */
+  #socials-container {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* About section */
+  #about {
+    text-align: center;
+  }
+
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  /* Experiência e projetos */
+  .article-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    width: 80%;
+  }
+
+  /* Contato */
+  .contact-info-upper-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  footer {
+    height: auto;
+    margin-top: 3rem;
+  }
+}
