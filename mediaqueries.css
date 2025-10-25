@@ -226,8 +226,8 @@
   width: 220px;      /* aumenta levemente o tamanho */
   height: auto;      /* deixa altura proporcional */
   max-height: 300px; /* evita ultrapassar outros elementos */
-  border-radius: 20px;
-  object-fit: contain; /* mantém a imagem inteira sem cortar */
+  border-radius:15px;
+  object-fit: cover; /* mantém a imagem inteira sem cortar */
 }
 
 /* Ajustes para telas menores */
@@ -242,5 +242,13 @@
   .about-pic {
     width: 150px;
     max-height: 200px;
+  }
+}
+/* Versão desktop */
+@media (min-width: 1024px) {
+  .about-pic {
+    width: 250px;        /* aumenta um pouco */
+    height: auto;        /* mantém proporção */
+    border-radius: 15px; /* mantém cantos arredondados */
   }
 }
