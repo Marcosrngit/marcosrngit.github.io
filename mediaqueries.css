@@ -221,3 +221,26 @@
     margin-top: 3rem;
   }
 }
+/* Ajuste para a segunda foto */
+.about-pic {
+  width: 220px;      /* aumenta levemente o tamanho */
+  height: auto;      /* deixa altura proporcional */
+  max-height: 300px; /* evita ultrapassar outros elementos */
+  border-radius: 20px;
+  object-fit: contain; /* mantém a imagem inteira sem cortar */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .about-pic {
+    width: 180px;
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-pic {
+    width: 150px;
+    max-height: 200px;
+  }
+}
