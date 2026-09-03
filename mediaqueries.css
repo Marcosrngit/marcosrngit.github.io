@@ -128,19 +128,19 @@
   }
 
   .section__pic-container {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-  }
+    width: 250px;       /* Aumentamos um pouco para dar mais destaque */
+    height: 250px;      /* Travado no mesmo valor da largura */
+    margin: 0 auto 20px auto; /* Adicionado margem embaixo para afastar do texto */
+}
 
-  .profile-pic {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
+.profile-pic {
+    width: 250px;       /* Força a imagem a ter o tamanho exato do container */
+    height: 250px;      /* Força a imagem a ter o tamanho exato do container */
+    border-radius: 50%; /* Garante o círculo perfeito */
+    object-fit: cover;  /* Não deixa a logo amassar */
     border: 3px solid #ddd;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  }
+}
 
   .section__text {
     text-align: center;
