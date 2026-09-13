@@ -556,3 +556,20 @@ footer p {
         padding: 2rem 0;
     }
 }
+/* Centralização dos títulos das seções */
+
+#about > p,
+#experience > p,
+#projects > p,
+#contact > p {
+    text-align: center;
+    width: 100%;
+}
+
+#about > .title,
+#experience > .title,
+#projects > .title,
+#contact > .title {
+    text-align: center;
+    width: 100%;
+}
