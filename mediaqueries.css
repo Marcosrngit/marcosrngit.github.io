@@ -1,4 +1,12 @@
 /* =========================
+   RESPONSIVO
+   O CSS principal fica no style.css.
+   Este arquivo contém somente ajustes
+   para telas menores.
+========================= */
+
+
+/* =========================
    TABLETS / NOTEBOOKS
 ========================= */
 
@@ -12,8 +20,18 @@
         display: flex;
     }
 
-    #profile {
+    #profile,
+    .section-container {
         display: block;
+    }
+
+    section {
+        margin: 0 5%;
+        max-width: 90%;
+        height: auto;
+    }
+
+    #profile {
         height: auto;
         margin-bottom: 5rem;
     }
@@ -24,17 +42,7 @@
     }
 
     .section-container {
-        display: block;
         height: auto;
-    }
-
-    section {
-        margin: 0 5%;
-        height: auto;
-    }
-
-    .arrow {
-        display: none;
     }
 
     .section__pic-container {
@@ -51,6 +59,10 @@
     #projects {
         height: auto;
     }
+
+    .arrow {
+        display: none;
+    }
 }
 
 
@@ -60,14 +72,39 @@
 
 @media screen and (max-width: 768px) {
 
-    nav {
-        height: 12vh;
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
+    nav {
+        height: 12vh;
+        min-height: 70px;
+        padding: 0 2rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        max-width: calc(100% - 50px);
+    }
+
+    .hamburger-menu {
+        flex-shrink: 0;
+    }
+
+
+    /* SEÇÕES */
+
     section {
+        width: auto;
+        max-width: calc(100% - 4rem);
         margin: 0 2rem;
         height: auto;
+        min-height: 0;
     }
+
 
     /* PROFILE */
 
@@ -86,18 +123,13 @@
         width: 250px;
         height: 250px;
         margin: 0 auto 1.5rem;
-    }
-
-    .section__pic-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
+        flex-shrink: 0;
     }
 
     .section__text {
-        text-align: center;
         width: 100%;
+        max-width: 100%;
+        text-align: center;
     }
 
     .section__text__p1 {
@@ -110,20 +142,25 @@
 
     .title {
         font-size: 2rem;
+        line-height: 1.2;
+        overflow-wrap: break-word;
     }
 
 
     /* BOTÕES */
 
     .btn-container {
-        flex-direction: row;
-        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         gap: 0.75rem;
     }
 
     .btn {
-        width: 8rem;
+        width: min(80%, 400px);
+        max-width: 100%;
     }
 
 
@@ -145,6 +182,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 100%;
         height: auto;
         gap: 2rem;
     }
@@ -152,16 +191,19 @@
     .about-containers {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
         width: 100%;
+        max-width: 100%;
+        gap: 1.5rem;
     }
 
     .details-container {
         width: 100%;
+        max-width: 100%;
     }
 
     .about-pic {
         width: 180px;
+        max-width: 100%;
         height: auto;
         max-height: 250px;
         border-radius: 15px;
@@ -171,7 +213,19 @@
 
     /* EXPERIENCE */
 
+    .experience-details-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .experience-details-container > .about-containers {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .article-container {
+        width: 100%;
+        max-width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
@@ -179,7 +233,14 @@
 
     article {
         width: 100%;
+        max-width: 100%;
         justify-content: flex-start;
+        flex-shrink: 1;
+    }
+
+    .experience-sub-title {
+        font-size: 1.75rem;
+        overflow-wrap: break-word;
     }
 
 
@@ -187,42 +248,100 @@
 
     .color-container {
         width: 100%;
+        max-width: 100%;
     }
 
     .project-img {
         width: 90%;
+        max-width: 100%;
         height: auto;
+    }
+
+    .project-title {
+        overflow-wrap: break-word;
+    }
+
+    .project-btn {
+        max-width: 100%;
     }
 
 
     /* CONTACT */
 
     #contact {
+        width: auto;
+        max-width: 100%;
         height: auto;
         min-height: 50vh;
     }
 
     .contact-info-upper-container {
+        width: 100%;
+        max-width: 500px;
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
+        margin: 2rem auto;
     }
 
     .contact-info-container {
+        width: 100%;
+        max-width: 100%;
         margin: 0.75rem;
+    }
+
+    .contact-info-container p {
+        font-size: 1rem;
+        max-width: 100%;
+        overflow-wrap: anywhere;
     }
 
 
     /* FOOTER */
 
     footer {
+        width: 100%;
+        max-width: 100%;
         height: auto;
-        margin-top: 3rem;
-        padding-bottom: 2rem;
+        margin: 3rem 0 0;
+        padding: 2rem 1rem;
+        overflow-x: hidden;
     }
 
     footer nav {
+        width: 100%;
+        max-width: 100%;
         height: auto;
+        padding: 0;
+    }
+
+    footer .nav-links-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer .nav-links {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    footer .nav-links li {
+        flex-shrink: 0;
+    }
+
+    footer p {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-top: 1rem;
     }
 }
 
@@ -233,12 +352,17 @@
 
 @media screen and (max-width: 480px) {
 
-    section {
-        margin: 0 1.25rem;
+    nav {
+        padding: 0 1.25rem;
     }
 
     .logo {
         font-size: 1.5rem;
+    }
+
+    section {
+        max-width: calc(100% - 2.5rem);
+        margin: 0 1.25rem;
     }
 
     #profile {
@@ -262,13 +386,9 @@
         font-size: 1.8rem;
     }
 
-    .btn-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .btn {
-        width: 80%;
+        width: 90%;
+        max-width: 350px;
     }
 
     .about-pic {
@@ -278,5 +398,19 @@
 
     .contact-info-container p {
         font-size: 1rem;
+    }
+
+    footer {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    footer .nav-links {
+        gap: 0.8rem 1rem;
+        font-size: 1.1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
     }
 }
