@@ -575,3 +575,12 @@ footer p {
     text-align: center;
     width: 100%;
 }
+footer .nav-links-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer .nav-links {
+    justify-content: center;
+}
