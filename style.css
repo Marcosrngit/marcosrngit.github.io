@@ -48,7 +48,8 @@ nav {
     height: 17vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 5rem;
 }
 
 .nav-links {
