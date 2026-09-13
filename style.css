@@ -532,3 +532,20 @@ footer .nav-links-container {
 footer .nav-links {
     justify-content: center;
 }
+/* CARD ÚNICO DO PROJETO */
+.single-project-card {
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.single-project-card .article-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.single-project-card .project-img {
+    width: 90%;
+    height: auto;
+}
