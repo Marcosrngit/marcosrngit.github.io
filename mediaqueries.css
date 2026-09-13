@@ -1,254 +1,282 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
+/* =========================
+   TABLETS / NOTEBOOKS
+========================= */
 
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
+
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    #profile {
+        display: block;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    #experience,
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+
+    .section-container {
+        display: block;
+        height: auto;
+    }
+
+    section {
+        margin: 0 5%;
+        height: auto;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-containers {
+        margin-top: 0;
+    }
+
+    #contact,
+    #projects {
+        height: auto;
+    }
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
-  }
-}
-/* MOBILE (max-width: 768px) */
+
+/* =========================
+   CELULAR
+========================= */
+
 @media screen and (max-width: 768px) {
-  /* Ajuste geral */
-  section {
-    margin: 0 2rem;
-    height: auto;
-  }
 
-  /* Navbar */
-  #desktop-nav {
-    display: none;
-  }
+    nav {
+        height: 12vh;
+    }
 
-  #hamburger-nav {
-    display: flex;
-  }
+    section {
+        margin: 0 2rem;
+        height: auto;
+    }
 
-  /* Profile section */
-  #profile {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    gap: 2rem;
-  }
+    /* PROFILE */
 
-  .section__pic-container {
-    width: 250px;       /* Aumentamos um pouco para dar mais destaque */
-    height: 250px;      /* Travado no mesmo valor da largura */
-    margin: 0 auto 20px auto; /* Adicionado margem embaixo para afastar do texto */
+    #profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        min-height: 80vh;
+        margin-bottom: 4rem;
+        gap: 1rem;
+    }
+
+    .section__pic-container {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 1.5rem;
+    }
+
+    .section__pic-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .section__text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .section__text__p1 {
+        font-size: 1.1rem;
+    }
+
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+
+    /* BOTÕES */
+
+    .btn-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .btn {
+        width: 8rem;
+    }
+
+
+    /* REDES SOCIAIS */
+
+    #socials-container {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+
+    /* ABOUT */
+
+    #about {
+        text-align: center;
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .about-containers {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .details-container {
+        width: 100%;
+    }
+
+    .about-pic {
+        width: 180px;
+        height: auto;
+        max-height: 250px;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+
+    /* EXPERIENCE */
+
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    article {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+
+    /* PROJECTS */
+
+    .color-container {
+        width: 100%;
+    }
+
+    .project-img {
+        width: 90%;
+        height: auto;
+    }
+
+
+    /* CONTACT */
+
+    #contact {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .contact-info-upper-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contact-info-container {
+        margin: 0.75rem;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        height: auto;
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    footer nav {
+        height: auto;
+    }
 }
 
-.profile-pic {
-    width: 250px;       /* Força a imagem a ter o tamanho exato do container */
-    height: 250px;      /* Força a imagem a ter o tamanho exato do container */
-    border-radius: 50%; /* Garante o círculo perfeito */
-    object-fit: cover;  /* Não deixa a logo amassar */
-    border: 3px solid #ddd;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
 
-  .section__text {
-    text-align: center;
-  }
+/* =========================
+   CELULARES PEQUENOS
+========================= */
 
-  .section__text__p1 {
-    font-size: 1.1rem;
-  }
+@media screen and (max-width: 480px) {
 
-  .title {
-    font-size: 2rem;
-  }
+    section {
+        margin: 0 1.25rem;
+    }
 
-  .section__text__p2 {
-    font-size: 1.3rem;
-  }
+    .logo {
+        font-size: 1.5rem;
+    }
 
-  /* Botões */
-  .btn-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
+    #profile {
+        min-height: 75vh;
+    }
 
-  .btn {
-    width: 80%;
-  }
+    .section__pic-container {
+        width: 210px;
+        height: 210px;
+    }
 
-  /* Social icons */
-  #socials-container {
-    justify-content: center;
-    gap: 1rem;
-  }
+    .section__text__p1 {
+        font-size: 1rem;
+    }
 
-  /* About section */
-  #about {
-    text-align: center;
-  }
+    .section__text__p2 {
+        font-size: 1.1rem;
+    }
 
-  .section-container {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    gap: 2rem;
-  }
+    .title {
+        font-size: 1.8rem;
+    }
 
-  .about-containers {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .about-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    object-fit: cover;
-  }
+    .btn {
+        width: 80%;
+    }
 
-  /* Experiência e projetos */
-  .article-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .about-pic {
+        width: 150px;
+        max-height: 200px;
+    }
 
-  article {
-    width: 80%;
-  }
-
-  /* Contato */
-  .contact-info-upper-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  footer {
-    height: auto;
-    margin-top: 3rem;
-  }
-}
-/* Ajuste para a segunda foto */
-.about-pic {
-  width: 220px;      /* aumenta levemente o tamanho */
-  height: auto;      /* deixa altura proporcional */
-  max-height: 300px; /* evita ultrapassar outros elementos */
-  border-radius:15px;
-  object-fit: cover; /* mantém a imagem inteira sem cortar */
-}
-
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-  .about-pic {
-    width: 180px;
-    max-height: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-pic {
-    width: 150px;
-    max-height: 200px;
-  }
-}
-/* Versão desktop */
-@media (min-width: 1024px) {
-  .about-pic {
-    width: 250px;        /* aumenta um pouco */
-    height: auto;        /* mantém proporção */
-    border-radius: 15px; /* mantém cantos arredondados */
-  }
+    .contact-info-container p {
+        font-size: 1rem;
+    }
 }
