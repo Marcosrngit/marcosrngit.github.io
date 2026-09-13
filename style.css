@@ -532,20 +532,26 @@ footer .nav-links-container {
 footer .nav-links {
     justify-content: center;
 }
-/* CARD ÚNICO DO PROJETO */
-.single-project-card {
-    width: 350px;
-    max-width: 100%;
-    margin: 0 auto;
-}
+/* Projeto único - somente PC */
+@media screen and (min-width: 1201px) {
+    #projects .about-containers {
+        justify-content: center;
+    }
 
-.single-project-card .article-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+    #projects .single-project-card {
+        flex: 0 0 350px;
+        width: 350px;
+        max-width: 350px;
+    }
 
-.single-project-card .project-img {
-    width: 90%;
-    height: auto;
+    #projects .single-project-card .article-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #projects .single-project-card .project-img {
+        width: 90%;
+        height: auto;
+    }
 }
