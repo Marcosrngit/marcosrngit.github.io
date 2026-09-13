@@ -532,26 +532,3 @@ footer .nav-links-container {
 footer .nav-links {
     justify-content: center;
 }
-/* Projeto único - somente PC */
-@media screen and (min-width: 1201px) {
-    #projects .about-containers {
-        justify-content: center;
-    }
-
-    #projects .single-project-card {
-        flex: 0 0 350px;
-        width: 350px;
-        max-width: 350px;
-    }
-
-    #projects .single-project-card .article-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    #projects .single-project-card .project-img {
-        width: 90%;
-        height: auto;
-    }
-}

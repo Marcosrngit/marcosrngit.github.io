@@ -414,3 +414,33 @@
         font-size: 0.9rem;
     }
 }
+/* =================================
+   PROJETO ÚNICO - COMPUTADOR
+================================= */
+
+@media screen and (min-width: 769px) {
+
+    #projects .about-containers {
+        justify-content: center;
+    }
+
+    #projects .single-project-card {
+        flex: 0 0 350px !important;
+        width: 350px !important;
+        max-width: 350px !important;
+        box-sizing: border-box;
+    }
+
+    #projects .single-project-card .article-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #projects .single-project-card .project-img {
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+    }
+
+}
